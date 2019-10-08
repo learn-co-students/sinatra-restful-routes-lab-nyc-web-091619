@@ -1,0 +1,10 @@
+<h1>All Ze Recipes:</h1>
+
+<% @recipes.each do |recipe|%>
+    <h1> - - - - - - - - - - - - - - - - </h1>
+    <h2>Recipe: <%= recipe.name %> </h2>
+    <h3>Ingredients: <%= recipe.ingredients %> </h3>
+    <h3>Cook Time: <%= recipe.cook_time %> </h3>
+    <h3>Go To: <a href= '/recipes/<%=recipe.id%>'>this recipe's page</a> </h3>
+    <br>
+<%end%>
