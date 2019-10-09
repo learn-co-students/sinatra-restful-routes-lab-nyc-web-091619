@@ -1,0 +1,9 @@
+
+<h1> edit here </h1>
+<form action='/recipes/<%=@id%>' method="POST">
+<input id="hidden" type="hidden" name="_method" value="PATCH">
+  <label>Recipe Name: </label><input type="text" name="new_recipe_name">
+  <label>Recipe Ingredients: </label><input type="text" name="new_recipe_ingredients">
+  <label>Recipe Cooktime : </label><input type="text" name="recipe_cook_time">
+  <input type="submit">
+</form>
